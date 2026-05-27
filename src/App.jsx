@@ -9,7 +9,7 @@ import { PRESETS } from "./data/filterPresets";
 import { useFilteredImage } from "./hooks/useFilteredImage";
 import { createDemoImage } from "./utils/demoImage";
 import { getBrightnessPatch } from "./utils/imageProcessing";
-
+import defaultImage from "./assets/default-filter-image.jpg";
 const STARTING_PRESET = "sharpen";
 
 export default function InteractiveImageFilteringLab() {
@@ -17,7 +17,7 @@ export default function InteractiveImageFilteringLab() {
   const resultCanvasRef = useRef(null);
   const fileInputRef = useRef(null);
 
-  const [imageSrc, setImageSrc] = useState(() => createDemoImage());
+  const [imageSrc, setImageSrc] = useState(defaultImage);  
   const [selectedPreset, setSelectedPreset] = useState(STARTING_PRESET);
   const [kernel, setKernel] = useState(PRESETS[STARTING_PRESET].kernel.map(String));
   const [divisor, setDivisor] = useState(PRESETS[STARTING_PRESET].divisor);
