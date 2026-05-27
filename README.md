@@ -1,6 +1,11 @@
 # Interactive Image Filtering Lab
 
 A React learning tool that helps students understand image filtering and 3x3 convolution kernels. Students can upload an image, choose common filters, edit kernel values, compare the original and filtered result, and inspect the pixel math behind a selected patch.
+# Interactive Image Filtering Lab
+
+Live Demo: https://AmrataGill.github.io/interactive-image-filtering-lab/
+
+An interactive React + Vite web app that helps students understand image filtering concepts such as blur, sharpening, edge detection, and custom 3x3 kernels.
 
 ## What Students Can Learn
 
