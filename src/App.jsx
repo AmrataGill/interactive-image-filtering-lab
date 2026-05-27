@@ -62,7 +62,7 @@ export default function InteractiveImageFilteringLab() {
   }
 
   function resetDemo() {
-    setImageSrc(createDemoImage());
+    setImageSrc(defaultImage);
     setPatch(null);
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
